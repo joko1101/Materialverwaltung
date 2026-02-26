@@ -1,8 +1,10 @@
 # Materialverwaltung
 
-## Hinweise zur Benutzung
-- ```. setup``` im Terminal ausführen.
-- ```./Materialverwaltung <optional: Dateipfad>```
+## Setup
+- ```git clone https://github.com/joko1101/Materialverwaltung```
+- ```cd Materialverwaltung```
+- ```. build```
+- ```. start <optional: Dateipfad>```
 - Datenformate:
     - Artikelnummer: **6 alphanumerischen Zeichen**
     - **ACHTUNG**: Umlaute in den Daten können zu Fehlverhalten führen
@@ -15,8 +17,8 @@
   - Zeile anklicken, um Eingabefelder auszufüllen
 - **Material suchen** (nach Artikelnummer oder Bezeichnung)
 - **Material hinzufügen**
-  - Bestand vorhandener Materialien erhöhen
-  - Neues Material registrieren
+  - Bestand vorhandener Materialien erhöhen (nach Artikelnummer oder Bezeichnung)
+  - Neues Material registrieren (Artikelnummer **und** Bezeichnung benötigt)
 - **Material entfernen**
   - Bestand vorhandener Materialien verringern (nach Artikelnummer oder Bezeichnung)
 
