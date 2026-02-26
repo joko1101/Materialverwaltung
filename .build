@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=/opt/xforms/lib64
+
+gcc $1 -I /opt/xforms/include/ -L /opt/xforms/lib64 src/*.c -lforms -o Materialverwaltung
+
+
