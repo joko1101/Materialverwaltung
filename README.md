@@ -1,10 +1,15 @@
 # Materialverwaltung
 
 ## Setup
-- ```git clone https://github.com/joko1101/Materialverwaltung```
-- ```cd Materialverwaltung```
-- ```. build```
-- ```. start <optional: Dateipfad>```
+```bash 
+git clone https://github.com/joko1101/Materialverwaltung && cd Materialverwaltung
+```
+```bash
+. build
+```
+```bash
+. start <optional: Dateipfad>
+```
 - Datenformate:
     - Artikelnummer: **6 alphanumerischen Zeichen**
     - **ACHTUNG**: Umlaute in den Daten können zu Fehlverhalten führen
