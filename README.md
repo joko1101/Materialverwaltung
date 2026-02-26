@@ -10,7 +10,11 @@
     - **ACHTUNG**: Umlaute in den Daten können zu Fehlverhalten führen
 - Beim Start kann ein Dateipfad zu einer CSV-Datei als Parameter übergeben werden  
     - Nicht vorhandene Datei wird beim Speichervorgang neu angelegt  
-    - Verwendung einer Default-Datei bei nicht angegebenem Dateipfad  
+    - Verwendung einer Default-Datei bei nicht angegebenem Dateipfad
+- Debuggen:
+    - ```. build -g```
+    - ```. .env_setup```
+    - Starten mit Debugger
 
 ## Funktionen
 - **Gesamten Bestand anzeigen**
