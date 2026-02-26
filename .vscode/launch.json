@@ -9,7 +9,7 @@
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}/Materialverwaltung",
-        "args": [],
+        "args": ["./data/test.csv"],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [],

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat data/bestand.csv > data/bestand_backup.csv

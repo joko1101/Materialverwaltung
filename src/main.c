@@ -26,7 +26,14 @@ main( int    argc,
     fl_initialize( &argc, argv, 0, 0, 0 );
     fd_Materialverwaltung = create_form_Materialverwaltung( );
 
-    fd_Materialverwaltung->filepath = argv[1] ? argv[1] : "./data/bestand.csv";
+    if (argv[1] == NULL) {
+        fprintf(stderr, "No filepath provided. Using default: ./data/bestand.csv\n");
+        fd_Materialverwaltung->filepath = "./data/bestand.csv";
+    } else if (strlen(argv[1]) < 4 || strcmp(argv[1] + strlen(argv[1]) - 4, ".csv")) {
+        fprintf(stderr, "Warning: Provided filepath is no CSV file. Using default: ./data/bestand.csv\n");
+        fd_Materialverwaltung->filepath = "./data/bestand.csv";
+    } else fd_Materialverwaltung->filepath = argv[1];
+
     fd_Materialverwaltung->materials = loadMaterialsFromCSV(fd_Materialverwaltung->filepath);
     fd_Materialverwaltung->data_altered = 0;
 
