@@ -4,9 +4,11 @@
 ```bash 
 git clone https://github.com/joko1101/Materialverwaltung && cd Materialverwaltung
 ```
+Es sollte eine funktionierende Binärdatei enthalten sein. Falls nicht, mit folgendem Befehl kompilieren:
 ```bash
 . build
 ```
+Zum Starten des Programms folgenden Befehl ausführen:
 ```bash
 . start <optional: Dateipfad>
 ```
